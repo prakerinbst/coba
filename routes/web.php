@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    $users = DB::table('users')->get();
-    return view('welcome',['users' => $users]);
+    $users = DB::table('flights')->get();
+    return view('welcome',['flights' => $flights]);
 });
